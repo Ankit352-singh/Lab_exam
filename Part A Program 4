@@ -1,0 +1,49 @@
+<html>
+<body>
+
+<script type="text/javascript">
+let name = prompt("What is your name?"); 
+alert("Hello, " + name + "!");
+</script>
+
+
+
+<script type="text/javascript">
+var str = prompt("Enter the Text","");
+if(isNaN(str))
+{
+str = str.toUpperCase();
+for(var i = 0; i < str.length; i++) {
+var chr = str.charAt(i);
+if(chr == 'A' || chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U')break; }
+if( i < str.length )
+alert("The position of the left most vowel is "+ (i+1)); else
+alert("No vowel found in the entered string"); }
+</script>
+
+
+
+<script type="text/javascript">
+var str = prompt("Enter the Number","");
+{
+var num,rev=0,remainder;
+num = parseInt(str); while(num!=0) {
+remainder = num%10;
+num = parseInt(num/10);
+rev = rev * 10 + remainder;
+}
+alert("Reverse of "+ str +" is "+ rev); }
+</script>
+
+
+
+<script type="text/javascript">
+var email = prompt("What is your E-mail id?");
+
+var domain = email.substring(email.lastIndexOf("@") +1);
+alert("Domain " + domain + "!");
+</script>
+
+</body>
+</html>
+
